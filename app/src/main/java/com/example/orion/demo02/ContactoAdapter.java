@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -21,13 +22,19 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.ViewHo
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
         TextView item;
+        CheckBox cbNombre;
+
         public ViewHolderDatos(View itemView) {
             super(itemView);
             item=(TextView) itemView.findViewById(R.id.idDato);
+            cbNombre=(CheckBox) itemView.findViewById(R.id.cbNombre);
+
         }
 
         public void asignarDator(Contacto contacto) {
-            item.setText(contacto.toString());
+
+            cbNombre.setText(contacto.getNombre().toString());
+            item.setText(contacto.getTelefono().toString());
         }
     }
     @Override

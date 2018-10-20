@@ -28,9 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="2980b9" />
+                            <entry key="color" value="ffffff" />
                             <entry key="height" value="80" />
-                            <entry key="outputName" value="ic_account_circle_black_24dp" />
+                            <entry key="outputName" value="user" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\orion" />
                             <entry key="width" value="80" />

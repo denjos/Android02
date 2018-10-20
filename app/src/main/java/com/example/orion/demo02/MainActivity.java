@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etNombre;
     EditText etAlias;
     EditText etTelefono;
-    TextView tvLista;
+    Button btnContactos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         etNombre=(EditText) findViewById(R.id.etNombre);
         etAlias =(EditText) findViewById(R.id.etAlias);
         etTelefono=(EditText) findViewById(R.id.etTelefono);
+        btnContactos=(Button) findViewById(R.id.btnContactos);
 
 
         btnGuardar.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnContactos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
